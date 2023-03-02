@@ -1,0 +1,4 @@
+venv*
+session.vim
+__pycache__
+temp.py
