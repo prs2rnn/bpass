@@ -11,7 +11,7 @@ __all__ = ["generate_password", "generate_passwords", "VERSION"]
 VERSION = "0.1.0"
 
 
-def generate_password(length):
+def generate_password(length: int) -> str:
     """Generate strong password by length"""
     all_chars = f"{ascii_lowercase}{ascii_uppercase}{digits}{punctuation}"
 
@@ -28,12 +28,12 @@ def generate_password(length):
             return password
 
 
-def generate_passwords(length, amount):
+def generate_passwords(length: int, amount: int) -> str:
     """Generate strong passwords by amount"""
     return "\n".join(generate_password(length) for _ in range(amount))
 
 
-def integer(text):
+def integer(text: str) -> int:
     """Handle invalid arguments with argparse"""
     number = int(text)
     if number < 1:
