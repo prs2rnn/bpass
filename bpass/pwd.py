@@ -6,9 +6,9 @@ from string import ascii_lowercase, ascii_uppercase, digits, punctuation
 
 import pyclip
 
-__all__ = ["generate_password", "generate_passwords", "VERSION"]
+__all__ = ["generate_password", "generate_passwords"]
 
-VERSION = "0.2.0"
+VERSION = "0.1.1"
 
 
 def generate_password(length: int) -> str:

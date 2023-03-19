@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "bpass"
-version = "0.2.0"
+version = "0.1.1"
 description = "simple cli password-generator"
 authors = ["luculliano <vederecento@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 pyclip = "^0.7.0"
 
 [tool.poetry.scripts]
