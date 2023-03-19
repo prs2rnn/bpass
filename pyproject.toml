@@ -10,6 +10,8 @@ readme = "README.md"
 python = "^3.11"
 pyclip = "^0.7.0"
 
+[tool.poetry.scripts]
+bpass = 'bpass.pwd:main'
 
 [build-system]
 requires = ["poetry-core"]
