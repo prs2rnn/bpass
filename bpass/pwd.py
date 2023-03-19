@@ -8,7 +8,7 @@ import pyclip
 
 __all__ = ["generate_password", "generate_passwords", "VERSION"]
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 
 
 def generate_password(length: int) -> str:
