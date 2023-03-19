@@ -1,12 +1,13 @@
 from os import path
 
 from setuptools import find_packages, setup
-from bpass import VERSION
 
 # read the contents of README, esspecially all that stuff for PYPI
 current_dir = path.abspath(path.dirname(__file__))
 with open(path.join(current_dir, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
+
+VERSION = "0.1.0"
 
 setup(
     # Mandatory arg, unic
