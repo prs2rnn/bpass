@@ -12,7 +12,7 @@ pip install "git+https://github.com/luculliano/bpass.git"
 
 ## Usage
 
-Generate strong password with default characteristics via:
+Generate strong password with default characteristics and copy to clipboard for 45 seconds via:
 
 ```bash
 bpass
@@ -24,10 +24,10 @@ Display help:
 bpass -h
 ```
 
-Generate a password of specific length, amount and copy it:
+Generate a password of specific length and amount:
 
 ```bash
-bpass -l 20 -a 5 -c
+bpass -l 20 -a 5
 ```
 
 ## Copy to clipboard
