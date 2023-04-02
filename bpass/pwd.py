@@ -80,7 +80,7 @@ def main():
     if args.copy:
         try:
             pyclip.copy(password)
-        except:
+        except Exception:
             pass
     print(password)
 
