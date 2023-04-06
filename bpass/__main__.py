@@ -82,8 +82,8 @@ def main() -> None:
     length, amount = control_numbers(args_parsing())
     if amount == 1:
         password = next(generate_passwords(length, amount))
+        print(password)
         try:
-            print(password)
             pyclip.copy(password)
             # run other process to clear clipboard
             popen(
@@ -91,7 +91,7 @@ def main() -> None:
             {path.join(path.abspath(path.dirname(__file__)), 'clear.py')}"
             )
         except Exception:
-            print(password)
+            pass
         return
 
     print(*generate_passwords(length, amount), sep="\n")
